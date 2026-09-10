@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Contador MVC{% endblock %}
+
+{% block content %}
+  <h1>Contador MVC</h1>
+
+  <p class="contador" id="valor">{{ valor }}</p>
+
+  <div class="acciones">
+    <form action="{{ url_for('increment') }}" method="post">
+      <button type="submit">Incrementar</button>
+    </form>
+
+    <form action="{{ url_for('reset') }}" method="post">
+      <button type="submit" class="secundario">Reiniciar</button>
+    </form>
+  </div>
+
+  <footer>Estado en memoria del proceso: se reinicia al reiniciar el servidor.</footer>
+{% endblock %}

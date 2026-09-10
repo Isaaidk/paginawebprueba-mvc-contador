@@ -1,0 +1,23 @@
+# Entornos virtuales
+venv/
+.venv/
+env/
+
+# Bytecode de Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Variables de entorno
+.env
+
+# Herramientas / editores
+.pytest_cache/
+.mypy_cache/
+.idea/
+.vscode/
+*.swp
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
